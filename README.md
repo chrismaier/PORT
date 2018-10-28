@@ -1,8 +1,8 @@
-PORT - Proactive Operational Reliability Template
+# **PORT - Proactive Operational Reliability Template**
 
 Used to abstract and standardize a systems current maturity level for leaders.
 
-*** CAUTION ***
+### *** **CAUTION** ***
 Maturity models should never be used as a shaming tool or bludgeon to beat up on a system or development team.
 
 Maturity models work best when there are multiple systems to be assessed and the assessments are designed to abstract differences away from one another.
@@ -13,5 +13,5 @@ Outputs from assessments should be used by leaders to understand where opportuni
 Leaders should be using an assessment to decide if the system in question has achieved the proper level of maturity compared to other operational metrics like up-time, number of outages, and how critical a system is to the operation of the business.
 Leaders and teams should also be using the scoring tool repeatedly over time, not as a one and done. Plotting improvement quarter over quarter, year over year is the best use of the tool in the authors opinion.
 
-*** IMPORTANT ***
+### *** **IMPORTANT** ***
 Not all systems need to achieve the top/highest level assessment score.
