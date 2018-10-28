@@ -1,0 +1,29 @@
+
+Survey tool
+
+Let user check the boxes
+Generate a report of all things below a 3
+Allow for each item that falls below 3 to have a reference to a Jira/Redmine/defect list
+Date all submissions
+
+
+
+
+
+
+
+
+
+Specific feedback on the survey questions themselves:
+
+
+Plain text password “storage” question - make sure its clear that the password should not be plain text on the system itself vs. not in plain text anywhere on the planet.
+
+
+“Recoverability”
+Data loss - be specific as to what data loss looks like and what data we are referring to
+
+
+“Standards”
+Look at the wording related to open source and COTS software - see if there needs to be clarification, make sure we aren’t penalizing simply because proprietary software is being used.
+

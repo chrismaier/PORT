@@ -1,0 +1,47 @@
+#!/usr/bin/env bash
+
+set -e
+
+BRANCH="gh-pages"
+REPOSITORY=`mktemp -d /tmp/matrix-scoring.XXXXXX`
+SCORECARD_ROOT="OpsScoreCard"
+SCORECARD_BUILD="build/html/"
+
+success() {
+  echo -e "\033[32;1m$1"
+}
+
+error() {
+  echo -e "\033[31;1m$1"
+}
+
+echo "==> Verifying build enviroment..."
+
+if ! type "sphinx-build"; then
+  error "Could not find sphinx-build. Please verify sphinx is installed correctly before publishing."
+  exit 1
+fi
+
+echo "==> Generating HTML for Ops Scorecard..."
+cd $SCORECARD_ROOT && make html
+
+echo "==> Syncing updated documentation..."
+git clone --branch $BRANCH https://github.rackspace.com/port/matrix-scoreing $REPOSITORY
+rsync -rt --del --exclude=".git" $SCORECARD_BUILD $REPOSITORY
+
+echo "==> Disabling Jekyll processing..."
+touch $REPOSITORY/.nojekyll
+
+echo "==> Pushing updated documentation to GitHub Pages..."
+cd $REPOSITORY
+
+if [ -z "$(git status --porcelain)" ]; then
+  success "No documentation changes to publish. Skipping deploy."
+  exit 0
+fi
+
+git add --all
+git commit --message "publish scorecard"
+git push origin gh-pages
+
+success "Successfully published scorecard!"

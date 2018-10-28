@@ -1,0 +1,14 @@
+private*
+private.txt
+private.sh
+node-list.txt
+training_rsa
+*.private
+*.key
+build/
+build-old/
+*.DS_Store
+.DS_Store
+DS_Store*
+
+
