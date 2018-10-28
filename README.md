@@ -3,7 +3,9 @@
 Used to abstract and standardize a systems current maturity level for leaders.
 
 ### *** **CAUTION** ***
-Maturity models should never be used as a shaming tool or bludgeon to beat up on a system or development team.
+*Maturity models should never be used as a shaming tool or bludgeon to beat up on a system or development team.*
+
+### Use of PORT
 
 Maturity models work best when there are multiple systems to be assessed and the assessments are designed to abstract differences away from one another.
 Assessments should be honest, factual representations of current state, not fictitious rosy colored glasses fantasy future state wishful thinking pipe dreams.
@@ -14,4 +16,5 @@ Leaders should be using an assessment to decide if the system in question has ac
 Leaders and teams should also be using the scoring tool repeatedly over time, not as a one and done. Plotting improvement quarter over quarter, year over year is the best use of the tool in the authors opinion.
 
 ### *** **IMPORTANT** ***
-Not all systems need to achieve the top/highest level assessment score.
+*Not all systems need to achieve the top/highest level assessment score.*
+
